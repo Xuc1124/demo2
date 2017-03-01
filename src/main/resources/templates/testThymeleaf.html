@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8" >
+    <title>Hello</title>
+</head>
+    <body>
+    <!--<div th:each="index:${#numbers.sequence(0,#arrays.length(news)-1)}">
+        <div th:text="${news[index].title}"></div>
+        <div th:text="${users[index].name}"></div>
+    </div>-->
+    <div th:each="vo:${vos}">
+        <div th:text="${vo.get('users')}">1</div>
+
+    </div>
+    </body>
+</html>
